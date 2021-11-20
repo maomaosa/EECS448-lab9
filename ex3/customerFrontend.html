@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Exercise 3: Web Store</title>
+        <link href="myStyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <script src="formChecker.js" ></script>
+
+    <body>
+        <form action="customerBackend.php" method=post onsubmit="return formChecker()">
+
+            username:<input type="text" name="username" id="username">
+            password:<input type="password" name="password" id="password">
+            <input class="reset" type="reset" value = "Reset">
+            <input class="submit" type="submit" value = "Submit"><br>
+
+            <div class="item1">
+                <img src="3090.png"><br>
+                <div class="itemname">NVIDIA GeForce RTX 3090 24GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black</div><br>
+                <price id="price1">$1499.99</price><br>
+                Value:<input type="number" name="item1Value" id="item1Value" value=0><br>
+            </div>
+
+            <div class="item2">
+                <img src="airpodpro.jpg"><br>
+                <div class="itemname">Apple - AirPods Pro (with Magsafe Charging Case) - White</div><br>
+                <price id="price2">$189.99</price><br>
+                Value:<input type="number" name="item2Value" id="item2Value" value=0><br>
+            </div>
+
+            <div class="item3">
+                <img src="applewatch.jpg"><br>
+                <div class="itemname">Apple Watch Series 3 (GPS) 38mm Space Gray Aluminum Case with Black Sport Band - Space Gray Aluminum</div><br>
+                <price id="price3">$169.00</price><br>
+                Value:<input type="number" name="item3Value" id="item3Value" value=0><br>
+            </div>
+
+            <shipway>
+                <shipmessage>Which way do you want to ship?</shipmessage><br>
+                <input type = "radio" name = "shipchoice" value = 0>Free 7 day<br>
+                <input type = "radio" name = "shipchoice" value = 50>$50.00 over night<br>
+                <input type = "radio" name = "shipchoice" value = 5>$5.00 three day<br>
+            </shipway>
+
+    </body>
+
+</html>
